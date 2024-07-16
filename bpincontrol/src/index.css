@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom-shadow {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+.card-shadow {
+  box-shadow: 0px 4px 34px 0px #6e6e6e17;
+}
+.table-shadow {
+  box-shadow: 0px 4px 34px 0px rgba(110, 110, 110, 0.09);
+}
+.select {
+  background-image: none !important;
+  border: 2px solid #010101 !important;
+}
+.select:focus {
+  box-shadow: none !important;
+}
