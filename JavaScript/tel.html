@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telephone Input</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="form-group">
+            <label for="telephone">Telephone Number:</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">+1</span> <!-- Change the country code as needed -->
+                </div>
+                <input type="tel" class="form-control" id="telephone" placeholder="Enter telephone number"
+                    maxlength="10">
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // jQuery code to prevent alphabets input in telephone field
+        $(document).ready(function () {
+            $('#telephone').on('input', function () {
+                // Remove non-numeric characters from input
+                $(this).val($(this).val().replace(/\D/g, ''));
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+

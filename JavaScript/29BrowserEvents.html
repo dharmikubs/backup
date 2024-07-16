@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contianer">
+        <button id="btn">
+            click me
+        </button>
+    </div>
+    <script>
+        let btn = document.getElementById('btn');
+        // btn.addEventListener('click', x);
+        // function x(e) {
+        //     e.preventDefault();
+        //     console.log(e.target);
+        //     console.log(e);
+        //     console.log("called");
+        // }
+
+        btn.addEventListener('click', () => {
+            location.href = "https://www.facebook.com"
+        })
+    </script>
+</body>
+
+</html>

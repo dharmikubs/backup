@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laborum adipisci molestias unde a. Illum
+        asperiores suscipit impedit? Similique fuga, minima rerum soluta quaerat corrupti impedit molestias voluptates
+        eum corporis! Porro quae, asperiores rem earum modi, accusamus quis veritatis nam perspiciatis fugiat
+        repudiandae labore fugit dolorem? Repudiandae quia nesciunt commodi facere nam. Incidunt soluta quia modi
+        praesentium obcaecati dicta sequi asperiores nesciunt minima. Dignissimos provident corporis ipsum itaque rerum
+        nemo illo quisquam nulla quam expedita repellat, sed animi maxime corrupti officiis. Unde, nobis! Recusandae,
+        quibusdam molestiae nemo repudiandae omnis eius perferendis excepturi ipsam officia. Odio iusto possimus
+        reprehenderit magni temporibus?
+    </p>
+    <button>hide/show</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $('button').on(
+            //     {
+            //         click: function () {
+            //             $('p').toggle(1500, function () {
+            //                 console.log("hide or show");
+            //             })
+            //         }
+            //     }
+            // )
+            $('button').on(
+                {
+                    click: function () {
+                        $('p').toggle(1500, function () {
+                            console.log("hide or show");
+                        })
+                    }
+                }
+            )
+
+        })
+    </script>
+</body>
+
+</html>

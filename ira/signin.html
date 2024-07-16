@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRA | Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        .font-quicksand {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(97.18deg, #F1F3EB 0%, #F8FCEC 100%);
+        }
+    </style>
+
+</head>
+
+<body class="bg-[#F2EEE9] text-[#383336]">
+    <div class="px-2 sm:px-4 md:px-10 lg:px-4 xl:px-16 font-quicksand">
+        <div class="flex flex-col items-center justify-center h-[100dvh]">
+            <a href="index.html">
+                <div class="head space-y-1 md:space-y-0 md:flex md:items-center md:space-x-4">
+                    <div class="img rounded-[15px] p-2">
+                        <img src="assets/images/ira_logo.svg" class="w-20" alt="">
+                    </div>
+
+                </div>
+            </a>
+            <!-- csrf token -->
+            <form
+                class="form w-[90%] sm:w-[80%] md:w-[60%] lg:w-[35%] shadow-custom lg:p-[45px] bg-white sm:p-[30px] p-[25px] rounded-[10px] my-6 text-xs">
+                <h2 class="text-[15px] font-bold md:text-xl text-center">Ira Admin Portal</h2>
+                <div class="inputs  mt-8">
+                    <div class="mb-4">
+                        <label for="first_name" class="block mb-2 text-sm text-[#383336] font-bold">Email
+                        </label>
+                        <input type="email" id="email" name="email"
+                            class="bg-[#F8F8F8] border-none focus:ring-1 focus:ring-[#383336] active:border-0  text-[#383336] text-[14px] rounded-[10px] block w-full p-2 md:p-3"
+                            placeholder="Enter Your Email" autocomplete="off" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="first_name" class="block mb-2 text-sm text-[#383336] font-bold">Password</label>
+                        <input type="password" id="password" name="password"
+                            class="bg-[#F8F8F8] border-none focus:ring-1 focus:ring-[#383336]  text-[#383336] text-sm rounded-[10px] block w-full p-2 md:p-3"
+                            placeholder="Enter Your Password" required />
+                    </div>
+                    <button
+                        class="bg-[#383336] text-[16px] font-semibold md:font-bold text-white w-[100%] rounded-[218px] sm:py-4 sm:px-4 p-3  gap-3 mt-5">Sign
+                        in</button>
+                    <div class="text-center mt-5 md:text-sm md:flex justify-center space-x-1">
+                        <p class="font-semibold">Having issue in login?
+                        </p>
+                        <a href="#" class="underline font-bold">Contact
+                            Support</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

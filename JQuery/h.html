@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Navbar</title>
+    <style>
+        #navbar {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        #navContent {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        #navContent a {
+            padding: 14px 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        #scrollLeftButton,
+        #scrollRightButton {
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        #scrollLeftButton {
+            left: 0;
+        }
+
+        #scrollRightButton {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <button id="scrollLeftButton">&lt;</button>
+        <div id="navContent">
+            <!-- Your navbar content here -->
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <!-- Add more links as needed -->
+        </div>
+        <button id="scrollRightButton">&gt;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var scrollLeftButton = document.getElementById('scrollLeftButton');
+            var scrollRightButton = document.getElementById('scrollRightButton');
+            var navContent = document.getElementById('navContent');
+
+            var scrollAmount = 5; // Adjust as needed
+            var scrollInterval;
+
+            // Function to scroll left
+            function scrollLeft() {
+                navContent.scrollLeft -= scrollAmount;
+            }
+
+            // Function to scroll right
+            function scrollRight() {
+                navContent.scrollLeft += scrollAmount;
+            }
+
+            // Event listener for mouse down on left button
+            scrollLeftButton.addEventListener('mousedown', function () {
+                scrollInterval = setInterval(scrollLeft, 50); // Adjust interval as needed
+            });
+
+            // Event listener for mouse up or mouse leave on left button
+            scrollLeftButton.addEventListener('mouseup', stopScroll);
+            scrollLeftButton.addEventListener('mouseleave', stopScroll);
+
+            // Event listener for mouse down on right button
+            scrollRightButton.addEventListener('mousedown', function () {
+                scrollInterval = setInterval(scrollRight, 50); // Adjust interval as needed
+            });
+
+            // Event listener for mouse up or mouse leave on right button
+            scrollRightButton.addEventListener('mouseup', stopScroll);
+            scrollRightButton.addEventListener('mouseleave', stopScroll);
+
+            // Function to stop scrolling
+            function stopScroll() {
+                clearInterval(scrollInterval);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

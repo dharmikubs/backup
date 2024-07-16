@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        .font-quicksand {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .sidebar-links a.active {
+            color: #fff;
+        }
+
+        .shadow-custom {
+            box-shadow: 0px 4px 34px 0px #6E6E6E17;
+
+        }
+
+        ::-webkit-scrollbar {
+            height: 2px;
+            width: 2px;
+            background: #F8F8F8;
+        }
+
+        ::-webkit-scrollbar-thumb:horizontal {
+            background: #383336;
+            border-radius: 10px;
+        }
+
+        textarea::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+        }
+
+        select {
+            background-image: none !important;
+        }
+
+        .swiper {
+            /* width: 100%;
+            height: 80%; */
+            position: static !important;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .swiper-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } */
+
+        .swiper-pagination-bullet-active {
+            background: #A8CF45 !important;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8F8F8]">
+    <aside id="logo-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 "
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-[#383336] text-[#979797]">
+            <a href="/" class="flex items-center ps-2.5 mb-5 space-x-3">
+                <div class="img">
+                    <img src="assets/images/ira_logo2.svg" class="w-14" alt="logo" />
+                </div>
+            </a>
+            <ul class="mt-12 font-medium sidebar-links">
+                <li class="mb-2">
+                    <a href="/dashboard.html" class="flex items-center p-3 text-[#979797]  rounded-[10px]  group">
+                        <img src="assets/images/dashboard.svg" alt="">
+                        <span class="ms-3">Dashboard</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <button type="button"
+                        class="flex items-center w-full p-3 text-base text-[#979797] transition duration-75  group rounded-[10px]"
+                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                        <img src="assets/images/products.svg" alt="">
+                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Products</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="dropdown-example" class="hidden py-3 space-y-2">
+                        <li>
+                            <a href="/productmgt.html"
+                                class="flex items-center w-full p-3 text-[#979797] transition duration-75  pl-11 group rounded-[10px]">Product
+                                Mgt.</a>
+                        </li>
+                        <li>
+                            <a href="/categoriesmgt.html"
+                                class="flex items-center w-full p-3 text-[#979797] transition duration-75  pl-11 group rounded-[10px]">Categories
+                                Mgt.</a>
+                        </li>
+                        <li>
+                            <a href="/specificationmgt.html"
+                                class="flex items-center w-full p-3 text-[#979797] transition duration-75  pl-11 group rounded-[10px]">Specification
+                                Mgt.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-2">
+                    <a href="/imeimgt.html" class="flex items-center p-3 text-[#979797]  rounded-[10px]  group">
+                        <img src="assets/images/imei.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">IMEI Mgt.</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/servicecenter.html" class="flex items-center p-3 text-[#979797]  rounded-[10px]  group">
+                        <img src="assets/images/servicecenter.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Service Center Mgt.</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/faq.html" class="flex items-center p-3 text-[#979797]  rounded-[10px]  group">
+                        <img src="assets/images/faq.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">FAQs</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/spareparts.html" class="flex items-center p-3 text-[#979797]  rounded-[10px]  group">
+                        <img src="assets/images/spareparts.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Spare Parts Price List</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="sm:ml-64">
+        <header class="sticky bg-white top-0 py-3 px-5  border-b  border-[#E3E0D8] z-20">
+            <nav class="flex justify-between ">
+                <div class="toggler flex items-center">
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button"
+                        class="inline-flex items-center text-sm text-[#383336] sm:hidden focus:outline-none">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="flex justify-end space-x-1 items-center">
+                    <li><a href="#"><img src="assets/images/exit.svg" class="p-[0.8rem] bg-[#FAFAFA] rounded-[50%]"
+                                alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="bg-[#A8CF45] px-3.5 py-3.5 rounded-full text-black">
+                                <p
+                                    class="w-4 h-4 flex items-center justify-center tracking-wide text-sm font-extrabold">
+                                    JS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="p-6 text-lg sm:texl-2xl md:text-2xl  font-[500]">
+            <div class="lg:flex justify-between items-center mb-8">
+                <h2 class="text-lg lg:text-2xl  font-bold ">View Product</h2>
+                <!-- Breadcrumb -->
+                <nav class="flex justify-between" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center  sm:mb-0">
+                        <li>
+                            <div class="flex items-center">
+                                <a href="#" class=" text-xs font-medium text-[#3983336]">Dashboard</a>
+                            </div>
+                        </li>
+                        <span class="mx-1 text-gray-400 text-xs">/</span>
+                        <li>
+                            <div class="flex items-center">
+                                <a href="#" class="text-xs font-bold text-[#3983336]">View Product</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="relative overflow-x-auto shadow-custom rounded-[10px]">
+                <div class="wrapper sm:p-6 p-4 flex flex-col lg:flex-row lg:space-x-7 bg-white">
+                    <div class="left_section lg:w-1/2 relative lg:pb-0">
+                        <div class="mb-8">
+                            <h3 class="text-lg text-nowrap  text-[#383336] font-bold ">View Product Details
+                            </h3>
+                        </div>
+                        <div class="flex justify-center h-[250px] lg:h-[530px] items-start mb-5 lg:mb-8 ">
+                            <div class="relative lg:h-[470px] h-[250px]">
+                                <div
+                                    class="swiper lg:ml-0 lg:mr-0 mySwiper flex justify-start w-[200px] h-[200px] min-w-[200px] min-h-[200px] lg:w-[330px] lg:h-[450px] lg:min-w-[330px] lg:min-h-[450px]">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <img src="assets/images/product_1.svg"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-04-01-at-11.52.33-AM.jpeg"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2021/11/1-2.png"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2023/01/1015-black.png"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2021/06/1-4.png"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2023/01/T1021-1500px%E7%94%BB%E6%9D%BF-2.jpg"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2023/01/T1021-1500px%E7%94%BB%E6%9D%BF-2.jpg"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2023/01/WhatsApp-Image-2023-01-11-at-16.09.03.png"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2021/11/1-1.png"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="https://wishtel.com/wp-content/uploads/2023/01/1019-s.jpg"
+                                                class="w-[200px] min-w-[200px] lg:w-[330px] lg:min-w-[330px] object-cover"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination z-10"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="right_section lg:w-2/3 lg:px-8  lg:border-l-2 lg:border-[#F8F8F8]">
+                        <div class="mb-8 flex flex-col justify-center items-start">
+                            <div class=" rounded-[50px] text-[#9EBC51] bg-[#F0F2E9] text-[16px] mb-4">
+                                <span class="py-0.5 px-3 ">Tablet</span>
+                            </div>
+                            <h3
+                                class="xl:text-[28px] text-[28px] lg:text-[22px] text-wrap  text-[#383336] font-bold mb-4">
+                                IRA T803
+                                (3GB) POWER MEETS
+                                SPEED
+                            </h3>
+                            <span class="text-[16px] text-wrap leading-5 text-[#383336]">When performance matters go for
+                                IRA T803 the
+                                perfect
+                                tablet to speed up your on-the-go work.</span>
+                        </div>
+
+                        <table class="w-full text-sm text-left text-[#383336] rounded-[10px]">
+                            <!-- <table
+                                class="w-full text-sm text-left text-[#383336] rounded-[10px] border border-separate border-tools-table-outline border-[#e3e0d8]"> -->
+
+                            <thead>
+                                <div class="w-full">
+                                    <td colspan="2"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap bg-[#E9E9E9] rounded-t-[10px]">
+                                        Technical
+                                        Specification
+                                    </td>
+                                </div>
+                            </thead>
+                            <tbody class="">
+                                <tr class=" bg-[white]">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Model No
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap bg-[#F9F9F9] w-full border-b">
+                                        IRA T803
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        CPU
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        2 GHz Quad-Core
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Screen Resolution
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        1280 x 800 IPS Display
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Ram
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        2GB
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Rom
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        32GB
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        OS Version
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Android 11/12
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Front Camera
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        5 Mega Pixel
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Back Camera
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        8 Mega Pixel with Flash
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Speaker
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Built-in
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Battery
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        5500 mAh
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Support Network
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        2G+3G+4G(VolTE)
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Sim Slot
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Dual
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Bluetooth Version
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        5.0
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Video Support
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Yes
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Video Calling
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Yes
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Screen Resolution
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        5.0
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Wi-Fi
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Dual Band 802.11a/b/g/n/AC (2.4GHz+5GHz)
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Sim Slot
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Dual Sim (Nano Sim) Supports 4G
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Micro SD
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        D(TF) Supports up to 512 GB Micro SD Card
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Hard Switched
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        Power ON / OFF, Vol + Vol –
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        NITS
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        300-350 nits
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        AC Adaptor
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        5V DC Output
+                                    </td>
+                                </tr>
+                                <tr class="bg-white">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-b border-r">
+                                        Language Support
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full border-b">
+                                        many language & Input method
+                                    </td>
+                                </tr>
+                                <tr class="bg-white rounded-b-[10px]">
+                                    <td scope="row"
+                                        class="px-4 py-3 font-bold text-[#383336] whitespace-nowrap text-wrap w-1/3  bg-[#F9F9F9] border-r rounded-bl-[10px]">
+                                        Accessories
+                                    </td>
+                                    <td scope="row"
+                                        class="px-4 py-3 font-semibold text-[#383336] whitespace-nowrap text-wrap w-full  rounded-br-[10px]">
+                                        Adapter, Type C USB Cable, User Manual, Flip Cover
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const activepage = window.location.pathname;
+        const link = document.querySelectorAll('.sidebar-links a').
+            forEach(link => {
+                if (link.href.includes(`${activepage}`)) {
+                    link.classList.add('active');
+                }
+            })
+
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

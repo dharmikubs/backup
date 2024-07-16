@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+        .font-quicksand {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+        }
+
+        .sidebar-links a.active {
+            background-color: #474446;
+            color: #fff;
+        }
+
+        .shadow-custom {
+            box-shadow: 0px 4px 34px 0px #6E6E6E17;
+
+        }
+
+        ::-webkit-scrollbar {
+            height: 2px;
+            width: 2px;
+            background: #F8F8F8;
+        }
+
+        ::-webkit-scrollbar-thumb:horizontal {
+            background: #383336;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8F8F8]">
+    <aside id="logo-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 "
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-[#383336] text-[#979797]">
+            <a href="/" class="flex items-center ps-2.5 mb-5 space-x-3">
+                <div class="img">
+                    <img src="assets/images/ira_logo2.svg" class="w-14" alt="logo" />
+                </div>
+            </a>
+            <ul class="mt-12 font-medium sidebar-links">
+                <li class="mb-2">
+                    <a href="/dashboard.html"
+                        class="flex items-center p-3 text-[#979797]  dark:text-[#979797] hover:bg-[#474446] rounded-[10px]  group">
+                        <img src="assets/images/dashboard.svg" alt="">
+                        <span class="ms-3">Dashboard</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <button type="button"
+                        class="flex items-center w-full p-3 text-base text-[#979797] transition duration-75  group hover:bg-[#474446] rounded-[10px] dark:text-[#979797]"
+                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                        <img src="assets/images/products.svg" alt="">
+                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">Products</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="dropdown-example" class="hidden py-3 space-y-2">
+                        <li>
+                            <a href="/productmgt.html"
+                                class="flex items-center w-full p-3 text-[#979797] transition duration-75  pl-11 group hover:bg-[#474446] rounded-[10px]">Product
+                                Mgt.</a>
+                        </li>
+                        <li>
+                            <a href="/categoriesmgt.html"
+                                class="flex items-center w-full p-3 text-[#979797] transition duration-75  pl-11 group hover:bg-[#474446] rounded-[10px]">Categories
+                                Mgt.</a>
+                        </li>
+                        <li>
+                            <a href="/specificationmgt.html"
+                                class="flex items-center w-full p-3 text-[#979797] transition duration-75  pl-11 group hover:bg-[#474446] rounded-[10px]">Specification
+                                Mgt.</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-2">
+                    <a href="/imeimgt.html"
+                        class="flex items-center p-3 text-[#979797]  dark:text-[#979797] hover:bg-[#474446] rounded-[10px]  group">
+                        <img src="assets/images/imei.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">IMEI Mgt.</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/servicecenter.html"
+                        class="flex items-center p-3 text-[#979797]  dark:text-[#979797] hover:bg-[#474446] rounded-[10px]  group">
+                        <img src="assets/images/servicecenter.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Service Center Mgt.</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/faq.html"
+                        class="flex items-center p-3 text-[#979797]  dark:text-[#979797] hover:bg-[#474446] rounded-[10px]  group">
+                        <img src="assets/images/faq.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">FAQs</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/spareparts.html"
+                        class="flex items-center p-3 text-[#979797]  dark:text-[#979797] hover:bg-[#474446] rounded-[10px]  group">
+                        <img src="assets/images/spareparts.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Spare Parts Price List</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="sm:ml-64">
+        <header class="sticky bg-white top-0 py-3 px-5  border-b border-[#E3E0D8] z-10">
+            <nav class="flex justify-between ">
+                <div class="toggler flex items-center">
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button"
+                        class="inline-flex items-center text-sm text-[#383336] sm:hidden focus:outline-none">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="flex justify-end space-x-1 items-center">
+                    <li><a href="#"><img src="assets/images/exit.svg" class="p-[0.8rem] bg-[#FAFAFA] rounded-[50%]"
+                                alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="bg-[#A8CF45] px-3.5 py-3.5 rounded-full text-black">
+                                <p
+                                    class="w-4 h-4 flex items-center justify-center tracking-wide text-sm font-extrabold">
+                                    JS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="p-6 text-lg sm:texl-2xl md:text-2xl  font-[500] ">
+            <div class="lg:flex justify-between items-center mb-8">
+                <h2 class="text-lg lg:text-2xl  font-bold ">FAQs</h2>
+                <!-- Breadcrumb -->
+                <nav class="flex justify-between" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center  sm:mb-0">
+                        <li>
+                            <div class="flex items-center">
+                                <a href="#" class=" text-xs font-medium text-[#3983336]">Dashboard</a>
+                            </div>
+                        </li>
+                        <span class="mx-1 text-gray-400 text-xs">/</span>
+                        <li>
+                            <div class="flex items-center">
+                                <a href="#" class="text-xs font-bold text-[#3983336]">FAQs</a>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="relative overflow-x-auto shadow-custom  rounded-[10px]">
+                <div
+                    class="md:flex w-full bg-white justify-between sm:p-6 p-4  md:space-y-0 py-4 lg:space-y-0 items-center">
+                    <h3 class="text-lg text-nowrap  text-[#383336] font-bold">FAQs List</h3>
+                    <form class="flex space-x-3">
+                        <input type="search" placeholder="Search..."
+                            class="search text-xs font-[600] p-2.5 md:w-[237px] border border-[#E0DDD9] rounded-[10px]">
+                        <button id="open-modal-button"
+                            class="bg-[#383336] text-white rounded-full text-sm px-[30px] py-[10px] font-bold text-center"
+                            type="button">
+                            +Add
+                        </button>
+                    </form>
+                    <div id="modal-overlay" class="hidden fixed top-0 right-0 left-0 bottom-0 bg-black opacity-50 z-40">
+                    </div>
+                    <div id="modal"
+                        class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-md z-50 w-[90%] md:w-full max-w-md">
+                        <div class="relative w-full">
+                            <div class="relative">
+                                <div
+                                    class="flex items-center justify-between p-4 border-b-[1px] border-[#E3E0D8] rounded-t">
+                                    <h3 class="text-xl font-bold text-[#383336]">
+                                        Add FAQs
+                                    </h3>
+                                    <button id="close-modal-button" type="button"
+                                        class="end-2.5 text-[#383336] bg-transparent rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="p-4">
+                                    <form id="modal-form" class="space-y-4 px-2" action="#">
+                                        <div>
+                                            <label for="question"
+                                                class="block mb-2 text-sm text-[#383336] font-bold">Question</label>
+                                            <input type="text" id="question" name="question"
+                                                class="bg-[#F8F8F8] border-none text-[#979797] text-sm rounded-[10px] block w-full p-3"
+                                                placeholder="Enter Question" autocomplete="off" required />
+                                        </div>
+                                        <div>
+                                            <label for="answer"
+                                                class="block mb-2 text-sm text-[#383336] font-bold">Answer</label>
+                                            <textarea id="answer" name="answer"
+                                                class="bg-[#F8F8F8] border-none text-[#979797] text-sm rounded-[10px] block w-full p-3"
+                                                placeholder="Type here..." autocomplete="off" required></textarea>
+                                        </div>
+                                        <div class="flex justify-center">
+                                            <button id="save-button"
+                                                class="bg-[#383336] text-[16px] font-semibold md:font-bold text-white w-[50%] rounded-[218px] sm:py-2 sm:px-2 p-2 gap-3 mt-3">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative overflow-x-auto">
+                    <table class="w-full text-sm text-left rtl:text-right text-[#383336] font-[600]">
+                        <thead class="text-xs uppercase bg-white">
+                            <tr class="text-[#979797] text-nowrap font-[600]">
+                                <td scope="col" class="px-8 capitalize">
+                                </td>
+                                <td scope="col" class="px-12 capitalize text-end">
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody class="text-[#383336] text-nowrap px-12">
+                            <tr class="border-b-[10px] border-[#fff] rounded-[10px] ">
+                                <td scope="row" class="px-8 py-6 font-bold ">
+                                    <div class="flex flex-col  justify-between">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-2">
+                                                <div>1.</div>
+                                                <div>hello
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="font-normal text-wrap ml-4">
+                                            hello
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-8 py-6 text-end flex flex-start space-x-3 ">
+                                    <button class="w-5" id="editbtn">
+                                        <img src="assets/images/edit.svg" class="w-7" alt="">
+                                    </button>
+                                    <button class="w-5">
+                                        <img src="assets/images/Delete icon.svg " class="w-7" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="mb-2 rounded-[10px]">
+                                <td scope="row" class="px-8 py-6 font-bold ">
+                                    <div class="flex flex-col">
+                                        <div class="flex justify-between">
+                                            <div class="flex space-x-2">
+                                                <div>1.</div>
+                                                <div>IRA Question lorem ipsume dolor sit amet consectetur venatis proin?
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="font-normal text-wrap ml-4">
+                                            Lorem ipsum dolor sit amet consectetur. Venenatis proin erat non nisi
+                                            blandit massa id placerat. Elementum volutpat
+                                            posuere purus id ultrices erat non nisi blandit massa id placerat.Lorem
+                                            ipsum dolor sit amet consectetur. Venenatis
+                                            proin erat non nisi blandit massa id placerat. Elementum volutpat
+                                            posuere purus id ultrices erat non nisi blandit massa.
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-8 py-6 text-end flex flex-start space-x-3">
+                                    <button class="w-5" id="editbtn">
+                                        <img src="assets/images/edit.svg" class="w-7" alt="">
+                                    </button>
+                                    <button class="w-5">
+                                        <img src="assets/images/Delete icon.svg " class="w-7" alt="">
+                                    </button>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+    </div>
+    </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        const activepage = window.location.pathname;
+        const link = document.querySelectorAll('.sidebar-links a').
+            forEach(link => {
+                if (link.href.includes(`${activepage}`)) {
+                    link.classList.add('active');
+                }
+            })
+
+        // const openModalButton = document.getElementById('open-modal-button');
+        // const closeModalButton = document.getElementById('close-modal-button');
+        // const modalOverlay = document.getElementById('modal-overlay');
+        // const modal = document.getElementById('modal');
+
+        // openModalButton.addEventListener('click', () => {
+        //     modal.classList.remove('hidden');
+        //     modalOverlay.classList.remove('hidden');
+        // });
+
+        // closeModalButton.addEventListener('click', () => {
+        //     modal.classList.add('hidden');
+        //     modalOverlay.classList.add('hidden');
+        // });
+
+        $('#open-modal-button').click(function () {
+            $('#modal-overlay').show();
+            $('#modal').show();
+        })
+        $('#editbtn').click(function () {
+            $('#modal-overlay').show();
+            $('#modal').show();
+        })
+        $('#close-modal-button').click(function () {
+            $('#modal-overlay').hide();
+            $('#modal').hide();
+        })
+
+        // $('#close-modal-button').click(function () {
+        //     $('#modal-overlay').hide();
+        //     $('#modal').hide();
+        // })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+</head>
+
+<body>
+    <!-- <div id="product-list">
+
+    </div> -->
+
+    <script>
+        let key_cookie = prompt("Enter Cookie Key");
+        let value_cookie = prompt("Enter Cookie Value");
+        document.cookie = `${encodeURIComponent(key_cookie)} = ${encodeURIComponent(
+            value_cookie    
+        )}`;
+        console.log(encodeURIComponent(document.cookie));
+
+        // const productList = document.getElementById("product-list");
+
+        // fetch("https://fakestoreapi.com/products?limit=20")
+        //     .then(response => {
+        //         if (!response.ok) {
+        //             throw new Error('Network response was not ok');
+        //         }
+        //         return response.json();
+        //     })
+        //     .then(data => {
+        //         data.forEach(product => {
+        //             const productElement = document.createElement("div");
+        //             productElement.innerHTML = `
+        //                 <h4>${product.title}</h4>
+        //                 <p>Price: $${product.price}</p>
+        //                 <p>Description: ${product.description}</p>
+        //                 <div><img src="${product.image}" style="width:200px;height:250px" alt=""></div>
+        //                 <hr>
+        //             `;
+        //             productList.appendChild(productElement);
+        //         });
+        //     })
+        //     .catch(error => {
+        //         console.error('There was a problem with the fetch operation:', error);
+        //     });
+    </script>
+</body>
+
+</html>

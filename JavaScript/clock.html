@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rubik", sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+        }
+
+        .flex {
+            display: flex;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container flex">
+        <div id="hour" class="hour"></div>
+        &nbsp;<span>:</span>&nbsp;
+        <div id="minutes" class="minutes"></div>
+        &nbsp;<span>:</span>&nbsp;
+        <div id="second" class="second"></div>
+        <div id="ampm"></div>
+    </div>
+    <script>
+        let time = setInterval(() => {
+            let clock = new Date();
+            console.log(clock.toLocaleTimeString());
+            let hour = clock.getHours();
+            let minutes = clock.getMinutes();
+            let second = clock.getSeconds();
+            // let ampm = (hour >= 12) ? "PM" : "AM";
+            console.log(`hour :${hour} minutes:${minutes} seconds:${second} `);
+            document.getElementById('hour').innerHTML = ` ${hour} `;
+            document.getElementById('minutes').innerHTML = ` ${minutes} `;
+            document.getElementById('second').innerHTML = ` ${second} `;
+            // document.getElementById('ampm').innerHTML = ` ${ampm} `;
+        }, 1000);
+    </script>
+</body>
+
+</html>

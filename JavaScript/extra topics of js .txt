@@ -1,0 +1,9 @@
+extra topics of js :
+
+	- lexical environment
+	- Nullish Coalescing 
+	- bubbling and tickling
+	- Method overriding and super keyword
+	- overriding with constcructor
+	- static keyword
+	- getters, setters & instanceOf Operator

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: ;
+            justify-content: center;
+            margin: 5rem 0 0 0;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .bg-ylw {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="AdobeStock_179748265_Preview-removebg-preview.png" class="" id="bulbimg" alt="">
+
+    </div>
+    <button id="bulb" onclick="onoff()">ON/OFF</button>
+    <script>
+        function onoff() {
+            let bulbimg = document.getElementById('bulbimg');
+            bulbimg.classList.toggle('bg-ylw');
+        }
+    </script>
+</body>
+
+</html>

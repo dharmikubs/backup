@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exim | Sign in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="bg-[#F2EEE9] text-[#10232E]">
+    <div class="px-2 sm:px-4 md:px-10 lg:px-4 xl:px-16 font-Poppins">
+        <div class="flex flex-col items-center justify-center h-[100dvh]">
+            <a href="index.html">
+                <div class="head space-y-1 md:space-y-0 md:flex md:items-center">
+                    <div class="img rounded-[15px]">
+                        <img src="assets/images/logo (3).svg" class="w-[69px]" alt="">
+                    </div>
+                    <h2 class="text-center text-xl font-bold sm:text-2xl md:text-[42px] md:font-semibold ms-3">Exim</h2>
+                </div>
+            </a>
+            <!-- csrf token -->
+            <form
+                class="form w-[90%] sm:w-[80%] md:w-[60%] lg:w-[560px] lg:max-w-[560px] shadow-custom lg:p-[45px] bg-white sm:p-[30px] p-[25px] rounded-md my-6 text-xs">
+                <h2 class="text-[15px] font-bold md:text-xl">Sign In To Exim</h2>
+                <div class="inputs  mt-8">
+                    <div class="mb-4">
+                        <label for="first_name" class="block mb-2 text-sm font-medium text-[#10232E]">Email Address
+                        </label>
+                        <input type="email" id="email" name="email"
+                            class="bg-white border border-[#E0DDD9] placeholder:text-[#979797] text-[#10232E] text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2 md:p-3"
+                            placeholder="Enter Your Email" autocomplete="off" required />
+                    </div>
+                    <div class="mb-4">
+                        <label for="first_name" class="block mb-2 text-sm font-medium text-[#10232E]">Password</label>
+                        <input type="password" id="password" name="password"
+                            class="bg-white border border-[#E0DDD9] placeholder:text-[#979797] text-[#10232E] text-sm rounded-[5px] focus:ring-blue-500 focus:border-blue-500 block w-full p-2 md:p-3"
+                            placeholder="Enter Your Password" required />
+                    </div>
+                    <button
+                        class="bg-[#10232E] font-semibold md:font-[900] text-[16px] tracking-wider text-white w-[100%] rounded-[5px] py-3.5 mt-5">Sign
+                        in</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

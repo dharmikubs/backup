@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Hello</h1> -->
+    <p>hello from elements</p>
+    <p id="paragraph">hello from id selector</p>
+    <p class="paragraph">hello from class selector</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('p').click(function () {
+                console.log("element selector"); //elements selector
+            })
+            $('.paragraph').click(function () {
+                console.log("class selector"); //class selector
+                $(this).hide();// select current elements
+            })
+            $('#paragraph').click(function () {
+                console.log("id selector"); //id selector
+                $('*').hide(); //hide all elements
+            })
+            $("p:first").click(function () {
+                console.log("first selector"); //selects the first p tag
+            })
+            $("[href]").click(function () {
+                console.log("attribute"); //select all elements with href selectors
+            })
+
+        })
+    </script>
+</body>
+
+</html>

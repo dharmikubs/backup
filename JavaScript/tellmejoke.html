@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .btn {
+      padding: 0.8rem 1rem;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      border-color: black;
+      font-weight: 400;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <button class="btn" id="button" onclick="get_joke()">Tell Me A Joke</button>
+    </div>
+    <div id="jokes">
+      <p id="joke"></p>
+    </div>
+  </section>
+  <script>
+    const jokes = [
+      "What do sea monsters eat? Fish and ships!",
+
+      "What do a tick and the Eiffel tower have in common?They’re both Paris sites.",
+
+      "What did the ocean say to the shore?Nothing, it just waved.",
+
+      "What did one snowman say to another?Wait, do you smell carrots",
+
+      "What did the hungry clock do?It went back 4 seconds",
+
+      "What’s the tallest building in the world? A library, of course. It has so many stories",
+
+      "Don’t take life too seriously.Remember, you will never get out of it alive!",
+
+      "I know they say that money talks But all mine says is “Goodbye!”",
+
+      "I used to have a handle on life But then it broke.",
+
+      "I tried to catch fog the other day.But I mist.",
+
+      "Let’s start telling people their brain is an app.Maybe then they’ll want to use it!",
+    ];
+    function get_joke() {
+      let joke = document.getElementById("joke")
+      let index = Math.floor(Math.random() * jokes.length);
+      let generated_joke = jokes[index];
+      joke.innerHTML = `${generated_joke}😂`;
+    }
+  </script>
+</body>
+
+</html>

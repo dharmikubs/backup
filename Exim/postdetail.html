@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="bg-[#F2EEE9]">
+
+    <aside id="logo-sidebar"
+        class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 font-Poppins"
+        aria-label="Sidebar">
+        <div class="h-full px-3 py-4 overflow-y-auto bg-[#10232E] text-white">
+            <a href="/" class="flex items-center ps-2.5 mb-5 space-x-3">
+                <div class="img rounded-[15px] p-2 bg-white">
+                    <img src="assets/images/logo.svg" class="w-6" alt="logo" />
+                </div>
+                <span class="self-center text-2xl font-semibold lg:font-bold whitespace-nowrap">Exim</span>
+            </a>
+            <ul class="mt-14 font-medium">
+                <li>
+                    <p class="uppercase flex items-center p-2 font-[900] tracking-wider">dashboard</p>
+                </li>
+                <li class="mb-2">
+                    <a href="/businesscategory.html"
+                        class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/business.svg" alt="">
+                        <span class="ms-3">Business Category</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/workarea.html" class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/workarea.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Work Area</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/businessexpo.html" class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/businessexpo.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Bussiness Expo</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/users.html" class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/usericon.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/posts.html" class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/post.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Posts</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/reportedpost.html" class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/reportedpost.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Reported Posts</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a href="/contactus.html" class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/contact.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Contact</span>
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <button type="button"
+                        class="flex items-center w-full p-2 text-base text-white transition duration-75  group hover:bg-[#1E3C4E] "
+                        aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                        <img src="assets/images/cms.svg" alt="">
+                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">CMS Management</span>
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                        <li>
+                            <a href="/termsandcondition.html"
+                                class="flex items-center w-full p-2 text-[#7493A6] transition duration-75  pl-11 group hover:bg-[#1E3C4E]">Terms
+                                & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="/privacypolicy.html"
+                                class="flex items-center w-full p-2 text-[#7493A6] transition duration-75  pl-11 group hover:bg-[#1E3C4E]">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html"
+                                class="flex items-center w-full p-2 text-[#7493A6] transition duration-75  pl-11 group hover:bg-[#1E3C4E]">Contact
+                                Us</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-2">
+                    <a href="/brodcastnotification.html"
+                        class="flex items-center p-2 text-white  hover:bg-[#1E3C4E]  group">
+                        <img src="assets/images/brodcast_notification.svg" alt="">
+                        <span class="flex-1 ms-3 whitespace-nowrap">Brodcast Notification</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class=" sm:ml-64 h-[100dvh]">
+        <header class="sticky bg-white top-0 py-3 px-5 shadow-header z-10">
+            <nav class="flex justify-between">
+                <div class="toggler flex items-center">
+                    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar"
+                        aria-controls="logo-sidebar" type="button"
+                        class="inline-flex items-center text-sm text-[#10232E] sm:hidden focus:outline-none">
+                        <span class="sr-only">Open sidebar</span>
+                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="flex justify-end space-x-1 items-center">
+                    <li><a href="#"><img src="assets/images/exit.svg" class="p-[0.8rem] bg-[#FAFAFA] rounded-[50%]"
+                                alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="bg-[#B37BE8] bg-opacity-10 px-3.5 py-3.5 rounded-full text-[#B37BE8]">
+                                <p class="w-4 h-4 flex items-center justify-center tracking-wider text-sm font-extrabold"
+                                    style="font-family: satoshi;">JS</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="p-3 sm:p-6 text-lg sm:texl-2xl md:text-2xl font-Poppins font-[500] ">
+            <h2 class="text-lg lg:text-2xl mb-8">Post Detail</h2>
+            <div class="py-2 sm:py-0 sm:p-2 bg-white shadow-custom">
+                <div class="wrapper p-4 lg:p-8 flex flex-col lg:flex-row lg:justify-between lg:space-x-12">
+                    <div class="left_section mb-5 lg:mb-0 lg:w-1/2 ">
+                        <div class="grid gap-x-4 grid-cols-1 sm:grid-cols-2 align-middle">
+                            <div class="mb-5 lg:flex lg:item-center flex justify-center">
+                                <img src="https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_1280.jpg"
+                                    class="h-[200px] object-cover w-[365px] rounded-[5px]" alt="">
+                            </div>
+                            <div class="mb-5 lg:flex lg:item-center flex justify-center">
+                                <img src="https://images.pexels.com/photos/2058946/pexels-photo-2058946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                    class="h-[200px] w-[365px] object-cover rounded-[5px]" alt="">
+                            </div>
+                            <div class="mb-5 lg:flex lg:item-center flex justify-center">
+                                <img src="https://cdn.pixabay.com/photo/2016/11/14/16/39/michigan-1823988_640.jpg"
+                                    class="h-[200px] w-[365px]  object-cover rounded-[5px]" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="right_section lg:w-1/2 lg:border-l-[1px] lg:border-opacity-40 lg:pl-12 lg:border-[#E0DDD9]">
+                        <h3 class="text-lg text-nowrap text-[#10232E] font-bold">Post Details</h3>
+                        <div class="grid gap-x-8 gap-y-4 grid-cols-1 justify-between mt-5">
+                            <div class="mb-3 lg:flex lg:item-center lg:space-x-3 h-auto">
+                                <div class="img lg:flex lg:items-start lg:py-2">
+                                    <img src="assets/images/postdetail/usericon.svg"
+                                        class="bg-[#FAD037] bg-opacity-10 p-1 lg:p-1.5 rounded-lg" alt="">
+                                </div>
+                                <div class="userinfo my-2 lg:flex-1">
+                                    <p class="text-xs lg:text-sm font-semibold lg:font-bold">Author Name</p>
+                                    <p class="text-xs lg:text-sm lg:font-normal">Mark Johnson</p>
+                                </div>
+                            </div>
+                            <div class="mb-3 lg:flex lg:item-center lg:space-x-3 h-auto">
+                                <div class="img lg:flex lg:items-start lg:py-2">
+                                    <img src="assets/images/postdetail/Bussiness icon (1).svg"
+                                        class="bg-[#B37BE8] bg-opacity-10 p-1 lg:p-1.5 rounded-lg" alt="">
+                                </div>
+                                <div class="userinfo my-2 lg:flex-1">
+                                    <p class="text-xs lg:text-sm font-semibold lg:font-bold">Bussiness Name</p>
+                                    <p class="text-xs lg:text-sm lg:font-normal">Orn LLC</p>
+                                </div>
+                            </div>
+                            <div class="mb-3 lg:flex lg:item-center lg:space-x-3 h-auto">
+                                <div class="img lg:flex lg:items-start lg:py-2">
+                                    <img src="assets/images/postdetail/Calender icon (1).svg"
+                                        class="bg-[#69C2B2] bg-opacity-10 p-1 lg:p-1.5 rounded-lg" alt="">
+                                </div>
+                                <div class="userinfo my-2 lg:flex-1">
+                                    <p class="text-xs lg:text-sm font-semibold lg:font-bold">Date Of Post</p>
+                                    <p class="text-xs lg:text-sm lg:font-normal">12 January 2024</p>
+                                </div>
+                            </div>
+                            <div class="mb-3 lg:flex lg:item-center lg:space-x-3 h-auto">
+                                <div class="img lg:flex lg:items-start lg:py-2">
+                                    <img src="assets/images/postdetail/task.svg"
+                                        class="bg-[#EA939D] bg-opacity-10 p-1 lg:p-1.5 rounded-lg" alt="">
+                                </div>
+                                <div class="userinfo my-2 lg:flex-1">
+                                    <p class="text-xs lg:text-sm font-semibold lg:font-bold">Discription Of Post</p>
+                                    <p class="text-xs lg:text-sm lg:font-normal">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Sapiente laboriosam maxime natus assumenda! Recusandae,
+                                        accusantium quod enim pariatur minus dolore ut quae harum totam possimus?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>

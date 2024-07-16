@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-ylw {
+            background-color: yellow;
+        }
+
+        .txt-white {
+            color: white;
+        }
+
+        .txt-dark {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first" class="bg-red txt-white">
+        hello from first div
+    </div>
+    <script>
+        let a = document.getElementById('first')
+        a.className = 'bg-red txt-dark';
+        // a.classList.remove('bg-ylw');
+        // a.classList.add('bg-red');
+        // a.classList.toggle('bg-red');
+        if (a.classList.contains('bg-red')) {
+            console.log("exist");
+        }
+        else {
+            console.log("not exist");
+        }
+    </script>
+</body>
+
+</html>

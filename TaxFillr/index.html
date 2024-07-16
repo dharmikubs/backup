@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxFilr</title>
+    <!-- custom stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css  -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-F1F2FC">
+    <main>
+        <section>
+            <div class="container-fluid font-roboto">
+                <h4 class="font-700 my-4">Tax Summary</h4>
+                <div class="bg-white maincontent overflow-x-auto my-2">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col" colspan="4">
+                                    <div class="d-flex px-4 py-2">
+                                        <div class="d-flex flex-column">
+                                            <span>Financial Year</span>
+                                            <div class="d-flex justify-content-between">
+                                                <span>2022-23</span>
+                                                <button class="btn p-0">
+                                                    <img src="assets/images/edit.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="mx-3"></div>
+                                        <div class="d-flex flex-column">
+                                            <span>Assessment Year</span>
+                                            <div class="d-flex justify-content-between">
+                                                <span>2023-24</span>
+                                                <button class="btn p-0">
+                                                    <img src="assets/images/edit.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col" class="text-center bg-F0FBFD align-middle">
+                                    Company 1
+                                </th>
+                                <th scope="col" class="text-center bg-F0FBFD align-middle">Company 2</th>
+                                <th scope="col" class="text-center bg-F0FBFD align-middle">Company 3</th>
+                                <th scope="col" class="text-center bg-F0FBFD align-middle">Total</th>
+                                <th scope="col" class="text-center"></th>
+                                <th scope="col" class="text-center bg-EBF8EB align-middle">Company 1</th>
+                                <th scope="col" class="text-center bg-EBF8EB align-middle">Company 2</th>
+                                <th scope="col" class="text-center bg-EBF8EB align-middle">Company 3</th>
+                                <th scope="col" class="text-center bg-EBF8EB align-middle">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3" colspan="4" rowspan="2"></td>
+                                <td class="p-3 bg-C3DEE3 text-398593" colspan="4" class="text-398593">
+                                    <div>
+                                        As per Form-16/Before Tax Planning/Consultation
+                                    </div>
+                                </td>
+                                <td rowspan="2"></td>
+                                <td class="p-3 bg-CCE3CC text-407F40" colspan="4">After Tax
+                                    Planning/Consultation</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DDECDD">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DDECDD">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DDECDD">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                                <td class="bg-DDECDD">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px; height:100px" placeholder="Company Name">
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <!-- =========================================================FIRST ACCORDION =================================================== -->
+
+                            <tr class="table-row">
+                                <td class="p-3" colspan="4">
+                                    <div data-toggle="collapse" href="#collapseGrandParent" role="button"
+                                        aria-expanded="false" aria-controls="collapseGrandParent">
+                                        <i class="fa fa-plus"></i> <span class="font-800">SCHEDULE SALARY - INCOME FROM
+                                            SALARY</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 1 ============================================== -->
+
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        <span class="font-400 text-wrap">Salary as per provisions contained in section
+                                            17(1)</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 2 ============================================== -->
+
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="13">
+                                    <div>
+                                        <a href="#" class="font-400 text-wrap">+Add More</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <!-- ========================================================= FIRST ACCORDION 3 ============================================== -->
+
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        <span class="font-400 text-wrap">Value of perquisites under section 17(2) (as
+                                            per Form No. 12BA, wherever applicable)</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 4 ============================================== -->
+
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        <span class="font-400 text-wrap">Profits in lieu of salary under section 17(3)
+                                            (as per Form No. 12BA, wherever applicable)</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 5 ============================================== -->
+
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        <span class="font-400 text-wrap">Income from retirement benefit account
+                                            maintained in a notified country u/s 89A</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 6 ============================================== -->
+
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        <span class="font-400 text-wrap font-800">TOTAL GROSS SALARY</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 7 ============================================== -->
+
+                            <!-- GROSS SALARY BREAKUP -->
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div data-toggle="collapse" href="#collapseParent2" role="button"
+                                        aria-expanded="false" aria-controls="collapseParent2">
+                                        <i class="fa fa-plus"></i> <span class="font-800">GROSS SALARY BREAKUP</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 7.1 ============================================== -->
+
+                            <tr class="collapse childofparenttwo" id="collapseParent2">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        Special Allowance
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 7.2 ============================================== -->
+
+                            <tr class="collapse childofparenttwo" id="collapseParent2">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        Basic Salary
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- ========================================================= FIRST ACCORDION 7.3 ============================================== -->
+
+                            <tr class="collapse childofparenttwo" id="collapseParent2">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        Dearness Allowance (DA)
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 7.4 ============================================== -->
+
+                            <tr class="collapse childofparenttwo" id="collapseParent2">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        HRA Allowance
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 8 ============================================== -->
+                            <tr class="table-row collapse" id="collapseGrandParent">
+                                <td class="p-3" colspan="4">
+                                    <div data-toggle="collapse" href="#collapseParent3" role="button"
+                                        aria-expanded="false" aria-controls="collapseParent2">
+                                        <i class="fa fa-plus"></i> <span class="font-800">Other Allowances</span>
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 8.1 ============================================== -->
+
+                            <tr class="collapse childofparentthree" id="collapseParent3">
+                                <td class="p-3" colspan="4">
+                                    <div>
+                                        Special Allowance
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-DFEEF1">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                                <td class="bg-EBF8EB">
+                                    <div class="d-flex justify-content-center">
+                                        <input type="text" name="" id="" class="form-control text-wrap text-break"
+                                            style="width: 100px;">
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- ========================================================= FIRST ACCORDION 8.2 ============================================== -->
+
+                            <tr class="collapse childofparentthree" id="collapseParent3">
+                                <td class="p-3" colspan="13">
+                                    <div>
+                                        <a href="#" class="font-400 text-wrap">+Add More</a>
+                                    </div>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- bootstrap js  -->
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz'
+        crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.table-row div').click(function () {
+                var icon = $(this).find('i');
+                if (icon.hasClass('fa-plus')) {
+                    icon.removeClass('fa-plus').addClass('fa-minus');
+                } else {
+                    icon.removeClass('fa-minus').addClass('fa-plus');
+                }
+            });
+
+            // Collapse nested elements when parent collapses and reset icons
+            $('#collapseGrandParent').on('hide.bs.collapse', function () {
+                $('#collapseParent1').collapse('hide');
+                $('#collapseParent1').find('i.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+                $('.childofparenttwo').collapse('hide');
+                $('#collapseParent2').find('i.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+                $('.childofparentthree').collapse('hide');
+                $('#collapseParent3').find('i.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+            });
+
+            // Reset icon on collapse
+            $('.collapse').on('hide.bs.collapse', function () {
+                $(this).prev().find('i.fa-minus').removeClass('fa-minus').addClass('fa-plus');
+            });
+
+            // Set icon on show
+            $('.collapse').on('show.bs.collapse', function () {
+                $(this).prev().find('i.fa-plus').removeClass('fa-plus').addClass('fa-minus');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
