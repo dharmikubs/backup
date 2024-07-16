@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <!-- custom css file  -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- fav-icon  -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- =========================================================== Header Section Starts =============================================================== -->
+
+    <header id="header">
+        <nav class="navbar navbar-expand-lg font-gotham text-uppercase">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ourgroomers">Our Groomers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-auto">
+                        <button class="btn position-relative cart_btn_header">
+                            <a href="/cart.html">
+                                <img src="assets/images/cart.svg" alt="">
+                            </a>
+                            <div class="position-absolute cart-count">
+                                <span>4</span>
+                            </div>
+                        </button>
+                        <button class="login_btn">login</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- =========================================================== Header Section Ends =============================================================== -->
+
+    <!-- =========================================================== Main Section Starts =============================================================== -->
+
+    <main>
+        <!--------------------------------------------------------- HeroSection Starts ---------------------------------------------------------------------->
+
+        <section id="hero_section" class="position-relative">
+            <div class="container font-gotham">
+                <div class="content d-flex flex-column justify-content-center align-items-center text-uppercase">
+                    <span class="tagline">Tagline text here</span>
+                    <h2 class="font-gotham-bold my-3">Premier pet groomer</h2>
+                    <span class="text-center text-lowercase introduction font-gotham-light">is simply dummy text of
+                        the
+                        printing and typesetting
+                        industry. Lorem Ipsum
+                        has been the
+                        industry's standard dummy text
+                        ever sinc</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="/appointment.html">
+                        <button class="btn bookappointment_btn">
+                            <div class="d-flex align-items-center">
+                                <div><img src="assets/images/calendar.svg" alt="" class="calender_icon"></div>
+                                <div><span class="mx-2">Book Appointment</span></div>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center align-item w-100">
+                    <div class="arrowdiv bg-white position-absolute">
+                        <div class="arrowdiv_second d-flex justify-content-center">
+                            <img src="assets/images/downarrow.svg" alt="Down Arrow" class="scroll-icon">
+                        </div>
+                    </div>
+                    <div class="scrolldown_txt position-absolute font-gotham-light text-uppercase">
+                        <span>scroll down</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--------------------------------------------------------- HeroSection End  ----------------------------------------------------------------------->
+
+
+        <!--------------------------------------------------------- About Section Starts  ----------------------------------------------------------------------->
+
+        <section id="about" class="my-5 position-relative">
+            <div class="container">
+                <div class="row wrapper">
+                    <div class="col">
+                        <div class="d-flex justify-content-end align-items-center h-100 font-gotham">
+                            <div class="groom_section">
+                                <span class="text-uppercase">About</span>
+                                <h2 class="text-uppercase font-gotham-bold my-4">Pet Grooming</h2>
+                                <span class="grooming_paragraph font-gotham-light">It is a long established fact that a
+                                    reader will be
+                                    distracted by the readable
+                                    content
+                                    of a page when looking at its
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                    distribution
+                                    of letters, as opposed to using
+                                    'Content here, content here', making it look like readable English. Many desktop
+                                    publishing packages and web page
+                                    editors now use Lorem Ipsum as their default model text, and a search for 'lorem
+                                    ipsum'
+                                    will uncover many web sites
+                                    still in their infancy. Various</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex justify-content-center justify-content-lg-end align-items-center h-100">
+                            <div class="dog_img_section text-end">
+                                <img src="assets/images/pawanddog.svg" class="dog_img" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute wire">
+                <img src="assets/images/wire.svg" alt="">
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- About Section End  ----------------------------------------------------------------------->
+
+
+        <!--------------------------------------------------------- Service Section Starts  ----------------------------------------------------------------------->
+
+        <section id="services" class="position-relative">
+            <div class="heading text-center text-uppercase font-gotham-bold">
+                <span>Our Provided</span>
+                <h2 class="font-gotham-bold mt-3">Service</h2>
+            </div>
+            <div class="container my-4">
+                <div class="row font-gotham-light">
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card p-4" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/service1.svg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5>Basic Groom</h5>
+                                <h5 class="card-title font-gotham-bold">$20.00</h5>
+                                <ul>
+                                    <li>It is a long established fact</li>
+                                    <li>That a reader will be distracted</li>
+                                    <li>Readable content of a page</li>
+                                </ul>
+                                <button class="btn card_btn">
+                                    <a href="#">
+                                        <div class="d-flex align-items-center ">
+                                            <div><img src="assets/images/calendar2.svg" alt=""></div>
+                                            <span class="mx-5 font-gotham text-nowrap">Book Now</span>
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card p-4" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/service2.svg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5>Full Groom</h5>
+                                <h5 class="card-title font-gotham-bold">$50.00</h5>
+                                <ul>
+                                    <li>It is a long established fact</li>
+                                    <li>That a reader will be distracted</li>
+                                    <li>Readable content of a page</li>
+                                </ul>
+                                <button class="btn card_btn">
+                                    <a href="#">
+                                        <div class="d-flex align-items-center ">
+                                            <div><img src="assets/images/calendar2.svg" alt=""></div>
+                                            <span class="mx-5 font-gotham text-nowrap">Book Now</span>
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card p-4" style="width: 18rem;">
+                            <img class="card-img-top" src="assets/images/service3.svg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5>Puppy Groom</h5>
+                                <h5 class="card-title font-gotham-bold">First Free</h5>
+                                <ul>
+                                    <li>It is a long established fact</li>
+                                    <li>That a reader will be distracted</li>
+                                    <li>Readable content of a page</li>
+                                </ul>
+                                <button class="btn card_btn">
+                                    <a href="#">
+                                        <div class="d-flex align-items-center ">
+                                            <div><img src="assets/images/calendar2.svg" alt=""></div>
+                                            <span class="mx-5 font-gotham text-nowrap">Book Now</span>
+                                        </div>
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center font-gotham">
+                <a href="#">
+                    <button class="view_btn mt-4 font-gotham-bold">View All</button>
+                </a>
+            </div>
+            <div class="position-absolute top-0 dots_img">
+                <img src="assets/images/dots.svg" alt="">
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- Service Section End  ----------------------------------------------------------------------->
+
+
+        <!--------------------------------------------------------- OurGroomer Section Starts  ----------------------------------------------------------------------->
+
+        <section id="ourgroomers" class="my-3 position-relative">
+            <div class="heading text-center text-uppercase font-gotham-bold">
+                <span>Professional</span>
+                <h2 class="font-gotham-bold mt-3">Our Groomer Team</h2>
+            </div>
+            <div class="container grooming_team font-gotham-light">
+                <div class="row d-flex justify-content-center">
+                    <div class="team_card col-lg-6">
+                        <div class="d-flex team">
+                            <div class="team_img">
+                                <img src="assets/images/member1.svg" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-4 justify-content-evenly">
+                                <div class="d-flex flex-column">
+                                    <span class="font-gotham name">Olivia</span>
+                                    <span class="designation font-gotham">Dog Groomer</span>
+                                </div>
+                                <span class="team_member_dec">It is a long established fact that a reader will be
+                                    distracted by the readable
+                                    content of a page when looking at its
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                    distribution of letters, ncy. <a href="#" class="font-gotham">Read
+                                        More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_card col-lg-6">
+                        <div class="d-flex team">
+                            <div class="team_img">
+                                <img src="assets/images/member2.svg" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-4 justify-content-evenly">
+                                <div class="d-flex flex-column">
+                                    <span class="font-gotham name">Osabella</span>
+                                    <span class="designation font-gotham">Dog Groomer</span>
+                                </div>
+                                <span class="team_member_dec">It is a long established fact that a reader will be
+                                    distracted by the readable
+                                    content of a page when looking at its
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                    distribution of letters, ncy. <a href="#" class="font-gotham">Read
+                                        More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_card col-lg-6">
+                        <div class="d-flex team">
+                            <div class="team_img">
+                                <img src="assets/images/member3.svg" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-4 justify-content-evenly">
+                                <div class="d-flex flex-column">
+                                    <span class="font-gotham name">John Smith</span>
+                                    <span class="designation font-gotham">Dog Groomer</span>
+                                </div>
+                                <span class="team_member_dec">It is a long established fact that a reader will be
+                                    distracted by the readable
+                                    content of a page when looking at its
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                    distribution of letters, ncy. <a href="#" class="font-gotham">Read
+                                        More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team_card col-lg-6">
+                        <div class="d-flex team">
+                            <div class="team_img">
+                                <img src="assets/images/member4.svg" alt="">
+                            </div>
+                            <div class="d-flex flex-column mx-4 justify-content-evenly">
+                                <div class="d-flex flex-column">
+                                    <span class="font-gotham name">Julia Shane</span>
+                                    <span class="designation font-gotham">Dog Groomer</span>
+                                </div>
+                                <span class="team_member_dec">It is a long established fact that a reader will be
+                                    distracted by the readable
+                                    content of a page when looking at its
+                                    layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                    distribution of letters, ncy. <a href="#" class="font-gotham">Read
+                                        More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute wire2">
+                <img src="assets/images/wire2.svg" alt="">
+            </div>
+            <div class="position-absolute paw">
+                <img src="assets/images/paw (2).svg" alt="">
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- OurGroomer Section Ends  ----------------------------------------------------------------------->
+
+
+        <!--------------------------------------------------------- Dog Section Starts  ----------------------------------------------------------------------->
+
+        <section id="sec_five" class="my-5 ">
+            <div class="container">
+                <div id="dog_section">
+                    <div class="row h-100 position-relative">
+                        <div class="col dogimgsec">
+                            <div class="position-absolute dog">
+                                <img src="assets/images/dog.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col appointmentsec_two d-flex align-items-center justify-content-center">
+                            <div class="font-gotham">
+                                <div class="d-flex flex-column py-5 appointment">
+                                    <h3 class="mb-4 font-gotham-bold">Book Appointment</h3>
+                                    <span class="mb-4 font-gotham-light text-wrap">Description paragraph dummy text used
+                                        here
+                                        lorem
+                                        Ipsume</span>
+                                    <a href="/appointment.html">
+                                        <button class="btn appointment_btn">
+                                            <span class="mx-2">Book Appointment</span>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--------------------------------------------------------- Dog Section Ends  ----------------------------------------------------------------------->
+
+        <!--------------------------------------------------------- OurProduct Section Starts  ----------------------------------------------------------------------->
+
+        <section id="ourproducts" class="my-3 position-relative">
+            <div class="container">
+                <div class="heading text-center text-uppercase font-gotham-bold">
+                    <span>Products</span>
+                    <h2 class="font-gotham-bold mt-3">Our Products</h2>
+                </div>
+                <div class="position-absolute scratch">
+                    <img src="assets/images/scratch.svg" alt="">
+                </div>
+                <div class="swiper mySwiper1">
+                    <div class="swiper-wrapper my-5">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card_two font-gotham-light">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/product1.svg" class="card-img-top product_img my-4"
+                                        alt="...">
+                                </div>
+                                <div
+                                    class="card-body card_body_two text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text font-gotham-bold">$5.00</p>
+                                    <a href="/cart.html">
+                                        <button class="btn buy_now_btn">
+                                            Buy Now
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card_two font-gotham-light">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/product2.svg" class="card-img-top product_img my-4"
+                                        alt="...">
+                                </div>
+                                <div
+                                    class="card-body card_body_two text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text font-gotham-bold">$5.00</p>
+                                    <a href="/cart.html">
+                                        <button class="btn buy_now_btn">
+                                            Buy Now
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card_two font-gotham-light">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/product3.svg" class="card-img-top product_img my-4"
+                                        alt="...">
+                                </div>
+                                <div
+                                    class="card-body card_body_two text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text font-gotham-bold">$5.00</p>
+                                    <a href="/cart.html">
+                                        <button class="btn buy_now_btn">
+                                            Buy Now
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card_two font-gotham-light">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/product4.svg" class="card-img-top product_img my-4"
+                                        alt="...">
+                                </div>
+                                <div
+                                    class="card-body card_body_two text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text font-gotham-bold">$5.00</p>
+                                    <a href="/cart.html">
+                                        <button class="btn buy_now_btn">
+                                            Buy Now
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card_two font-gotham-light">
+                                <div class="d-flex justify-content-center">
+                                    <img src="assets/images/product5.svg" class="card-img-top product_img my-4"
+                                        alt="...">
+                                </div>
+                                <div
+                                    class="card-body card_body_two text-center d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">Product Name</h5>
+                                    <p class="card-text font-gotham-bold">$5.00</p>
+                                    <a href="/cart.html">
+                                        <button class="btn buy_now_btn">
+                                            Buy Now
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat similar structure for other slides -->
+                        <!-- Add more slides as needed -->
+                    </div>
+
+                </div>
+                <div id="next_one" class="swiper-button-next"></div>
+                <div id="prev_one" class="swiper-button-prev"></div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center font-gotham">
+                <a href="/shop.html">
+                    <button class="view_shop mt-3 d-flex justify-content-between">
+                        <img src="assets/images/view_Shop.svg" alt="">
+                        <span class="ms-2 font-gotham-bold">View Shop</span>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- OurProduct Section Ends  ----------------------------------------------------------------------->
+
+        <!--------------------------------------------------------- work photo Section Starts  ----------------------------------------------------------------------->
+
+        <section id="workphotos" class="my-5 position-relative">
+            <div class="container">
+                <div class="heading text-center text-uppercase font-gotham-bold">
+                    <span>Post Images</span>
+                    <h2 class="font-gotham-bold mt-3">work photos</h2>
+                </div>
+                <div class="position-absolute paw_two">
+                    <img src="assets/images/paw (2).svg" alt="">
+                </div>
+                <div class="position-absolute ring_two">
+                    <img src="assets/images/ring2.svg" alt="">
+                </div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper my-5">
+
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1611173622933-91942d394b04?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nJTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://plus.unsplash.com/premium_photo-1663047910718-c8758a6785e9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0JTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBldCUyMGNhcmV8ZW58MHx8MHx8fDA%3D"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.pexels.com/photos/6235240/pexels-photo-6235240.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1616781296073-65d3f087de41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.unsplash.com/photo-1608744882201-52a7f7f3dd60?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.pexels.com/photos/6235228/pexels-photo-6235228.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.pexels.com/photos/6235106/pexels-photo-6235106.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div>
+                                <img src="https://images.pexels.com/photos/19145883/pexels-photo-19145883/free-photo-of-arms-of-a-person-bathing-a-dog.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                    class="slider_two_img" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="position-relative d-flex justify-content-center w-100">
+                        <div class="w-fit">
+                            <div id="next_two" class="swiper-button-next"></div>
+                            <div id="prev_two" class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- work photo Section Ends  ----------------------------------------------------------------------->
+
+        <!--------------------------------------------------------- Contact Section Starts  ----------------------------------------------------------------------->
+
+        <section id="contact">
+            <div class="container contact_section">
+                <div class="row wrapper">
+                    <div class="col d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <div class="d-flex font-gotham">
+                            <form class="d-flex flex-column py-5 contact_us">
+                                <h3 class="mb-4 font-gotham-bold">Let’s Be Frinds!</h3>
+                                <span class="mb-4 font-gotham-light text-wrap">Description paragraph dummy text used
+                                    here lorem
+                                    Ipsume</span>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control emailinput" id="exampleFormControlInput1"
+                                        placeholder="Enter Email Address" required>
+                                </div>
+                                <a href="#" class="w-fit">
+                                    <button class="btn appointment_btn">
+                                        <span class="mx-2">Subscribe</span>
+                                    </button>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <img src="assets/images/contact-support.svg" class="contact_img" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------------------------- Contact Section Ends  ----------------------------------------------------------------------->
+
+
+    </main>
+
+    <!-- =========================================================== Main Section Ends =============================================================== -->
+
+
+    <!-- =========================================================== Footer Section Starts =============================================================== -->
+
+    <footer>
+        <div class="container">
+            <div class="py-5 d-flex flex-column flex-lg-row align-items-lg-center justify-content-between">
+                <div
+                    class="d-flex flex-column flex-lg-row justify-content-center align-items-center text-center text-lg-start">
+                    <div class="mr-3 lg-mb-0 mb-4 mb-lg-0">
+                        <img src="assets/images/footer logo.svg" alt="">
+                    </div>
+                    <div class="vr ms-lg-5"></div>
+                    <div class="my-2 my-lg-0 ms-lg-4 mb-lg-0 mb-4">
+                        <span class="font-gotham copyright">© 2024. All rights reserved. Pet Shop</span>
+                    </div>
+                    <div
+                        class="d-flex flex-column flex-lg-row mx-lg-3 font-gotham-light  mb-lg-0 align-items-lg-center">
+                        <a href="#" class="mx-lg-2">Terms & Conditions</a>
+                        <div class="seperator">&#8226;</div>
+                        <a href="#" class="mx-lg-2">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="d-flex mt-5 mt-lg-0 justify-content-center align-items-center">
+                    <a href="https://www.facebook.com">
+                        <button class="btn social-media-first">
+                            <img src="assets/images/facebook (2).svg" alt="">
+                        </button>
+                    </a>
+                    <a href="https://x.com/">
+                        <button class="btn social-media">
+                            <img src="assets/images/x (2).svg" alt="">
+                        </button>
+                    </a>
+                    <a href="https://instagram.com/">
+                        <div class="social-media">
+                            <img src="assets/images/instagram (2).svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================== Footer Section Ends =============================================================== -->
+
+
+    <!-- =========================================================== All Scripts are Here =============================================================== -->
+
+    <!-- Bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS files  -->
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
